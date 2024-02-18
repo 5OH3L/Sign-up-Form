@@ -111,10 +111,15 @@ html,body{
 }
 input{
     width: 15vw;
+    height: 3.5vh;
     outline: none;
     color: black;
     transition: background-color .5s ease;
     border: 2px solid lightgray;
+}
+input::placeholder{
+    font-size: .7rem;
+    vertical-align: middle;
 }
 input:focus{
     border: 2px solid aqua;
