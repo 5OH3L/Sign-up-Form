@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Fredoka", sans-serif;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+    user-select: none;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #1B7D4F;
+    background-size: 300% 300%;
+    animation: color 12s ease infinite;
+    color: white;
+}
+@keyframes color {
+    from{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    to{
+        background-position: 0 50%;
+    }
+}
+
+
+.programmerName{
+    left: 11.5%;
+    top: 23%;
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 35px;
+}
+.programmerName h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: .1rem white;
+    width: 100%;
+    text-align: center;
+}
+#containerWrapper{
+    height: 100vh;
+    width: 100vw;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acdetails{
+    margin-bottom: 10px;
+}
+
+#leftContainer{
+    height: 100vh;
+    width: 30vw;
+    background: url(../img/background.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+#rightContainer{
+    height: 100vh;
+    width: 47vw;
+    background-color: #066839;
+    box-shadow: -3px 5px 20px 1px black;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cardContainer{
+    position: relative;
+    top: 2%;
+    height: 40vh;
+    width: 100%;
+    box-shadow: -3px 5px 20px 1px black;
+    padding: 20px 40px;
+    background-color: #066839;
+}
+.list{
+    font-size: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.list label{
+    margin-right: 30px;
+}
+.left,.right{
+    display: flex;
+    flex-direction: column;
+}
+.ulList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input{
+    width: 15vw;
+    outline: none;
+    color: black;
+    transition: background-color .5s ease;
+    border: 2px solid lightgray;
+}
+input:focus{
+    border: 2px solid aqua;
+}
+input:invalid{
+    border: 2px solid red;
+}
+.error{
+    transition: opacity .5s linear;
+    color: red;
+    height: 1vh;
+    opacity: 0;
+}
+#createAccount{
+    margin: 2rem 1rem .7rem 1rem;
+    font-size: 1.3rem;
+    padding: .5rem;
+    background-color: #1B7D4F;
+    text-align: center;
+    width: 15vw;
+    border-radius: .7rem;
+    cursor: pointer;
+    transition: transform .3s ease, box-shadow .2s ease;
+}
+#createAccount:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 1px black;
+}
+#logInLink{
+    margin: 0 1rem;
+}
+#logInLink a{
+    text-decoration: none;
+    color: #7bac80;
+    cursor: pointer;
+}
+#logInLink a:hover{
+    color: #8bb690;
+}
